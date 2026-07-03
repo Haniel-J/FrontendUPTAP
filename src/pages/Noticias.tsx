@@ -53,8 +53,8 @@ export default function Noticias() {
 
       <SectionBackground
         background="/videos/welcome_img/background2.jpeg"
-        color="#722064"
-        opacity={0.90}
+        color="#FFFFFF"
+        opacity={0.92}
       >
 
         {/* Encabezado */}
