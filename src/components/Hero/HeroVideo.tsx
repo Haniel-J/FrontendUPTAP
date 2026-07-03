@@ -16,7 +16,7 @@ export default function HeroVideo() {
         playsInline
         className="w-full h-full object-cover"
       >
-        <source src="/videos/videofondo.mp4" type="video/mp4" />
+        <source src="/videos/videofondo2.mp4" type="video/mp4" />
       </video>
 
       {/* Capa oscura para mejorar contraste */}
