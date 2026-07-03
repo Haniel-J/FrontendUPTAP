@@ -3,7 +3,6 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-  FaSearch,
 } from "react-icons/fa";
 import { GooeyInput } from "@/components/reactbits/gooey-input";
 
@@ -22,7 +21,7 @@ export default function TopBar() {
         className="h-9"
       />
 
-      <a href="/home">
+      <a href="/">
         <img
           src="src/assets/logos/LOGOUPTAP.png"
           alt="Logo UPTAP"

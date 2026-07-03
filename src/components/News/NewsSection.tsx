@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import SectionBackground from "@/components/layouts/SectionBackground";
 import NewsCard from "./NewsCard";
 import { API_URL } from "@/services/api";
+import { Link } from "react-router-dom";
+
 
 // Tipo que representa una noticia recibida desde Strapi
 interface News {
@@ -22,9 +24,9 @@ export default function NewsSection() {
   useEffect(() => {
     const getNews = async () => {
       try {
-        const response = await fetch(
-          `${API_URL}/api/noticias?populate=*`
-        );
+     const response = await fetch(
+  `${API_URL}/api/noticias?populate=*&sort=publishedAt:desc&pagination[pageSize]=3`
+  );
         const data = await response.json();
         setNews(data.data);
       } catch (error) {
@@ -38,16 +40,18 @@ export default function NewsSection() {
 
     <SectionBackground
       background="/videos/welcome_img/background2.jpeg"
-      color="#722064"
-      opacity={0.90}
+      color="#FFFFFF"
+      opacity={0.92}
     >
 
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-3xl font-poppins">
           Noticias
         </h2>
-      </div>
-
+          <Link to="/noticias" className="text-[#098049] font-poppins hover:underline">
+            Ver más → 
+          </Link>
+      </div>  
       <div
         className="
         grid

@@ -20,7 +20,7 @@ export default function Navbar() {
     <motion.header
       initial={false}
       animate={{
-        top: isScrolled ? 20 : 0,
+        top: isScrolled ? 16 : 0,
       }}
       transition={{
         duration: 0.35,
@@ -28,7 +28,7 @@ export default function Navbar() {
       }}
       className={`
         w-full
-        z-50
+        z-30
 
         ${
           isScrolled

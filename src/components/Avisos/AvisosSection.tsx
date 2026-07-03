@@ -6,8 +6,8 @@ export default function AvisosSection() {
   return (
      <SectionBackground
           background="/videos/welcome_img/background2.jpeg"
-          color="#722064"
-          opacity={0.90}
+          color="#FFFFFF"
+          opacity={0.92}
         >
     
       <div className="flex items-center justify-between mb-10">

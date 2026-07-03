@@ -10,7 +10,8 @@ import { ScrollBasedLine } from "@/components/ScrollBasedLine";
 import WelcomeModal from "@/components/WelcomeModal";
 import HeroCarousel from "@/components/Carousel/HeroCarousel";
 import AvisosSection from "@/components/Avisos/AvisosSection";
-import { CometCardDemo } from "@/components/OfertaEduc/CometCardDemo";
+import OfertaEducativaSection from "@/components/OfertaEduc/OfertaEducativaSection";
+import Footer from "@/components/Footer/Footer";
 
 
 function Home() {
@@ -45,7 +46,9 @@ function Home() {
 
       <AvisosSection />
 
-      <CometCardDemo />
+      <OfertaEducativaSection />
+
+      <Footer />
 
       </main>
     </>

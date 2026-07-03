@@ -1,10 +1,10 @@
-import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
 
 import ClickSpark from "@/components/reactbits/ClickSpark";
-
 import TopBar from "@/components/Header/TopBar";
 
-
+import Home from "./pages/Home";
+import Noticias from "./pages/Noticias";
 
 function App() {
   return (
@@ -15,10 +15,12 @@ function App() {
       sparkCount={8}
       duration={500}
     >
-
       <TopBar />
-      <Home />
-
+      {/* Rutas principales de la aplicación */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/noticias" element={<Noticias />} />
+      </Routes>
     </ClickSpark>
   );
 }
