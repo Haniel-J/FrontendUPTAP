@@ -1,17 +1,17 @@
 // Componentes principales de la página
 // @ts-ignore: TopBar is a .jsx module without TypeScript declarations
-
 // @ts-ignore: HeroVideo is a .jsx module without TypeScript declarations
 import HeroVideo from "../components/Hero/HeroVideo";
 import { useEffect, useState } from "react";
-import NewsSection from "@/components/News/NewsSection";
+import {NewsSection} from "@/components/News/NewsSection";
 import { ScrollBasedLine } from "@/components/ScrollBasedLine";
-
 import WelcomeModal from "@/components/WelcomeModal";
 import HeroCarousel from "@/components/Carousel/HeroCarousel";
 import AvisosSection from "@/components/Avisos/AvisosSection";
 import OfertaEducativaSection from "@/components/OfertaEduc/OfertaEducativaSection";
 import Footer from "@/components/Footer/Footer";
+
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -28,6 +28,9 @@ function Home() {
 
   return (
     <>
+    <Link to="/Carrera">
+        Ir a Carreras
+      </Link>
       <WelcomeModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
@@ -39,7 +42,7 @@ function Home() {
       <HeroVideo />
 
      <ScrollBasedLine />  
-      
+
       <HeroCarousel />
 
       <NewsSection />

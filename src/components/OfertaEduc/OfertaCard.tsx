@@ -32,7 +32,7 @@ export default function OfertaCard({
             w-72
             flex-col
             rounded-2xl
-            bg-[#1F2121]
+            bg-[#722064a2]
             p-3
             cursor-pointer
           "

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     // Pie de página institucional
-    <footer className="bg-[#0B5E3C] text-white mt-20">
+    <footer className="bg-[#0B5E3C] text-white mt-05">
 
       <div
         className="

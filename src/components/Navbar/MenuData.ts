@@ -4,7 +4,7 @@ export const menuItems: MenuItem[] = [
   {
     title: "Identidad",
     children: [
-      { title: "Historia", href: "/historia" },
+      { title: "Historia", href: "/Carreras" },
       { title: "Misión y Visión", href: "/mision-vision" },
       { title: "Rectoría", href: "/rectoria" },
       { title: "Organigrama", href: "/organigrama" },

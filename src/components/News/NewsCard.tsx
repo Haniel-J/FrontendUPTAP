@@ -1,6 +1,5 @@
 import TiltedCard from "@/components/reactbits/TiltedCard";
 
-
 interface NewsCardProps {
   news: {
     id: number;
@@ -33,7 +32,7 @@ export default function NewsCard({ news }: NewsCardProps) {
             className="
               w-full
               h-350px
-              bg-[#098049]/80
+              bg-[#722064bc]
               rounded-[15px]
               flex
               flex-col
@@ -42,12 +41,11 @@ export default function NewsCard({ news }: NewsCardProps) {
               text-white
             "
           >
-
-            <h3 className="font-opensans text-2xl mb-1">
+            <h3 className="font-bold text-xl mb-2">
               {news.title}
             </h3>
 
-            <p className="text-sm font-lato">
+            <p className="text-sm">
               {news.description}
             </p>
           </div>

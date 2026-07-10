@@ -4,7 +4,7 @@ import ClickSpark from "@/components/reactbits/ClickSpark";
 import TopBar from "@/components/Header/TopBar";
 
 import Home from "./pages/Home";
-import Noticias from "./pages/Noticias";
+import Carreras from "@/pages/Carreras";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <TopBar />
       {/* Rutas principales de la aplicación */}
       <Routes>
+        <Route path="/Carrera" element={<Carreras />} />
         <Route path="/" element={<Home />} />
-        <Route path="/noticias" element={<Noticias />} />
       </Routes>
     </ClickSpark>
   );

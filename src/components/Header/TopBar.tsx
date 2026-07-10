@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { GooeyInput } from "@/components/reactbits/gooey-input";
 
+
 export default function TopBar() {
   return (
     // Barra superior
