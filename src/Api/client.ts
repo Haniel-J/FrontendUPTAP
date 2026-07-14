@@ -1,9 +1,8 @@
 import { API_URL, STRAPI_TOKEN } from "@/services/api";
 
-/**
- * Cliente HTTP para consumir Strapi.
- * Todas las peticiones pasan por aquí.
- */
+// Cliente HTTP para consumir Strapi.
+// Todas las peticiones pasan por aquí.
+
 export async function apiFetch(endpoint: string) {
 
   const response = await fetch(
