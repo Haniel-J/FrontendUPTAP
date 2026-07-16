@@ -34,7 +34,7 @@ export function NewsSection() {
   return (
     <
       SectionBackground
-    background="/videos/welcome_img/background2.jpeg"
+    background="/videos/welcome_img/background5.png"
     color="#FFFFFF"
     opacity={0.90}
     >
