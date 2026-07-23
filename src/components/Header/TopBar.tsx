@@ -17,14 +17,14 @@ export default function TopBar() {
     <div className="flex items-center gap-4">
 
       <img
-        src="src/assets/logos/LOGOESTADO.PNG"
+        src="/videos/welcome_img/logos/LOGOESTADO.png"
         alt="Logo Estado"
         className="h-9"
       />
 
       <a href="/">
         <img
-          src="src/assets/logos/LOGOUPTAP.png"
+          src="/videos/welcome_img/logos/LOGOUPTAP.png"
           alt="Logo UPTAP"
           className="h-10"
         />
