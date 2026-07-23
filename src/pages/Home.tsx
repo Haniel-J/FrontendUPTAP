@@ -10,8 +10,9 @@ import HeroCarousel from "@/components/Carousel/HeroCarousel";
 import AvisosSection from "@/components/Avisos/AvisosSection";
 import OfertaEducativaSection from "@/components/OfertaEduc/OfertaEducativaSection";
 import Footer from "@/components/Footer/Footer";
-
-import { Link } from 'react-router-dom';
+import OfertaEducativa from "./OfertaEducativa/OfertaEducativa";
+import Transparencia from "./Transparencia/Transparencia";
+import ServiciosEscolares from "./ServiciosEscolares/ServiciosEscolares";
 
 
 function Home() {
@@ -28,17 +29,9 @@ function Home() {
 
   return (
     <>
-    <Link to="/Carrera">
-        Ir a Carreras
-      </Link>
-      <WelcomeModal
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-      />
-
+    <WelcomeModal isOpen={showModal} onClose={() => setShowModal(false)} />
       <main>
-       
-
+      
       <HeroVideo />
 
      <ScrollBasedLine />  
@@ -50,8 +43,16 @@ function Home() {
       <AvisosSection />
 
       <OfertaEducativaSection />
-
+      
       <Footer />
+
+      <OfertaEducativa />
+
+      <Transparencia />
+
+      <ServiciosEscolares />
+
+
 
       </main>
     </>
