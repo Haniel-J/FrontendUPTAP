@@ -31,7 +31,7 @@ export default function OfertaEducativaSection() {
           lg:flex-row
           justify-center
           items-center
-          gap-10
+          gap-30
         "
       >
         <OfertaCard

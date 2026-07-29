@@ -39,20 +39,12 @@ function Home() {
       <HeroCarousel />
 
       <NewsSection />
-
-      <AvisosSection />
-
-      <OfertaEducativaSection />
       
+      <AvisosSection />
+      
+      <OfertaEducativaSection />
+
       <Footer />
-
-      <OfertaEducativa />
-
-      <Transparencia />
-
-      <ServiciosEscolares />
-
-
 
       </main>
     </>

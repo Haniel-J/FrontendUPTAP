@@ -95,7 +95,7 @@ export const CometCard = ({
         initial={{ scale: 1, z: 0 }}
         whileHover={{
           scale: 1.05,
-          z: 50,
+          z: 10,
           transition: { duration: 0.2 },
         }}
         className="relative rounded-2xl"
