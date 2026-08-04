@@ -6,7 +6,7 @@ import { ofertaData } from "./oferta.data";
 export default function OfertaEducativaSection() {
   return (
     <SectionBackground
-      background="/videos/welcome_img/background2.jpeg"
+      background="/videos/welcome_img/background3.png"
       color="#FFFFFF"
       opacity={0.92}
     >

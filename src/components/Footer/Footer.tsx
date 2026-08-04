@@ -34,18 +34,19 @@ export default function HoverFooter() {
 
   const contactInfo = [
     {
-      icon: <Mail size={18} className="text-[#3ca2fa]" />,
-      text: "hello@nurui.com",
-      href: "mailto:hello@nurui.com",
+      icon: <Mail size={20} className="text-[#722064]" />,
+      text: "aspirantes@uptapachula.edu.mx",
+      href: "mailto:aspirantes@uptapachula.edu.mx",
     },
     {
-      icon: <Phone size={18} className="text-[#3ca2fa]" />,
-      text: "+91 86373 73116",
-      href: "tel:+918637373116",
+      icon: <Phone size={20} className="text-[#722064]" />,
+      text: "(962) 689 0090 EXT. 1001-1021",
+      href: "tel:+529626890090",
     },
     {
-      icon: <MapPin size={18} className="text-[#3ca2fa]" />,
-      text: "Sylhet, Bangladesh",
+      icon: <MapPin size={20} className="text-[#722064]" />,
+      text: "Tapachula-Puerto Madero Km. 24+300",
+      href: "https://www.google.com/maps/place/UNIVERSIDAD+POLITÉCNICA+DE+TAPACHULA.+UD1/@14.7469306,-92.3999745,21z/data=!4m6!3m5!1s0x858e1c21d788d1f3:0xef7f0843a662d0ae!8m2!3d14.7463956!4d-92.3990696!16s%2Fg%2F11byx310_d?entry=ttu&g_ep=EgoyMDI2MDcyOC4wIKXMDSoASAFQAw%3D%3D",
     },
   ];
 
@@ -65,7 +66,7 @@ export default function HoverFooter() {
           {/* Brand section */}
           <div className="flex flex-col space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="text-[#3ca2fa] text-3xl font-extrabold">
+              <span className="text-[#722064] text-3xl font-extrabold">
                 UPTAP
               </span>
               <span className="text-white text-3xl font-bold">UPTAP</span>
@@ -91,9 +92,6 @@ export default function HoverFooter() {
                     >
                       {link.label}
                     </a>
-                    {link.pulse && (
-                      <span className="absolute top-0 right-[10px] w-2 h-2 rounded-full bg-[#722064] animate-pulse"></span>
-                    )}
                   </li>
                 ))}
               </ul>
@@ -103,21 +101,21 @@ export default function HoverFooter() {
           {/* Contact section */}
           <div>
             <h4 className="text-white text-lg font-semibold mb-6">
-              Contact Us
+              Contacto
             </h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {contactInfo.map((item, i) => (
-                <li key={i} className="flex items-center space-x-3 text-gray-400">
+                <li key={i} className="flex items-center space-x-1 text-gray-400">
                   {item.icon}
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="hover:text-[#3ca2fa] transition-colors"
+                      className="hover:text-[#722064] transition-colors"
                     >
                       {item.text}
                     </a>
                   ) : (
-                    <span className="hover:text-[#3ca2fa] transition-colors">
+                    <span className="hover:text-[#722064] transition-colors">
                       {item.text}
                     </span>
                   )}
@@ -137,7 +135,7 @@ export default function HoverFooter() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="hover:text-[#3ca2fa] transition-colors"
+                className="hover:text-[#722064] transition-colors"
               >
                 {icon}
               </a>
@@ -151,10 +149,9 @@ export default function HoverFooter() {
       </div>
 
       {/* Text hover effect adaptado al ancho completo */}
-      <div className="lg:flex hidden h-25rem -mt-30 -mb-20 w-full justify-center items-center">
+      <div className="lg:flex hidden h-10rem -mt-10 -mb-30 w-full justify-center items-center">
         <TextHoverEffect text="UPTAP" className="z-50 w-full" />
       </div>
-
       <FooterBackgroundGradient />
     </footer>
   );

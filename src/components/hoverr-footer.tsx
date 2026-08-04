@@ -52,14 +52,14 @@ export const TextHoverEffect = ({
           r="25%"
         >
           {hovered && (
-            <>
-              <stop offset="0%" stopColor="#eab308" />
-              <stop offset="25%" stopColor="#ef4444" />
-              <stop offset="50%" stopColor="#80eeb4" />
-              <stop offset="75%" stopColor="#06b6d4" />
-              <stop offset="100%" stopColor="#8b5cf6" />
-            </>
-          )}
+  <>
+    <stop offset="0%" stopColor="#3f1138" /> {/* Rosa Neón */}
+    <stop offset="25%" stopColor="#E6E6E6" /> {/* Gris Platino */}
+    <stop offset="50%" stopColor="#E6E6E6" /> {/* Verde Oscuro */}
+    <stop offset="75%" stopColor="#E6E6E6" /> {/* Púrpura Profundo */}
+    <stop offset="100%" stopColor="#3f1138" /> {/* Rosa Neón */}
+  </>
+)}
         </linearGradient>
 
         <motion.radialGradient
@@ -100,7 +100,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="fill-transparent stroke-[#3f1138] font-[helvetica] text-7xl font-bold dark:stroke-[#3ca2fa99]"
+        className="fill-transparent stroke-[#3f1138] font-[helvetica] text-7xl font-bold dark:stroke-[#00000099]"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -128,14 +128,16 @@ export const TextHoverEffect = ({
     </svg>
   );
 };
-
 export const FooterBackgroundGradient = () => {
   return (
     <div
-      className="absolute inset-0 z-0"
+      className="absolute inset-0 z-0 bg-center"
       style={{
         background:
-          "radial-gradient(125% 125% at 50% 10%, #098049 20%, #722064 100%)",
+          "radial-gradient(125% 125% at 50% 10%, #098049 20%, #722064 100%), url('/videos/welcome_img/background6.png')",
+        backgroundSize: "cover, 1900px auto", // <--- Ajusta '150px' al ancho que prefieras
+        backgroundRepeat: "no-repeat",
+        backgroundBlendMode: "overlay", // o la opción que estés usando
       }}
     />
   );

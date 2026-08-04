@@ -12,7 +12,7 @@ export default function SectionBackground({
   children,
   background,
   color = "#722064",
-  opacity = 0.30,
+  opacity = 0.50,
   className = "",
 }: SectionBackgroundProps) {
   return (

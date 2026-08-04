@@ -5,7 +5,7 @@ import { avisosData } from "./avisos.data";
 export default function AvisosSection() {
   return (
      <SectionBackground
-          background="/videos/welcome_img/background2.jpeg"
+          background="/videos/welcome_img/background1.png"
           color="#FFFFFF"
           opacity={0.92}
         >

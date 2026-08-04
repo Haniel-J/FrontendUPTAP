@@ -51,7 +51,7 @@ export default function WelcomeModal({
 
             {/* Imagen */}
             <img
-              src="/videos/welcome_img/img.png"
+              src="/videos/welcome_img/3ra-convocatoria.jpeg"
               alt="Convocatoria"
               onClick={navigateToConvocatorias}
               className="

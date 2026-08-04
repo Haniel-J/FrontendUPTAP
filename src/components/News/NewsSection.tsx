@@ -34,7 +34,7 @@ export function NewsSection() {
   return (
     <
       SectionBackground
-    background="/videos/welcome_img/background2.jpeg"
+    background="/videos/welcome_img/background6.png"
     color="#FFFFFF"
     opacity={0.90}
     >
@@ -63,7 +63,6 @@ export function NewsSection() {
       mt-4
       max-w-2xl
       mx-auto
-      text-gray-600
     "
   >
     Consulta convocatorias, becas y eventos
@@ -267,11 +266,19 @@ const cards = [
     title: "Convocatorias",
     src: "/videos/welcome_img/BANNER_1.jpg",
     ctaText: "Ver más",
-    ctaLink: "#",
+    ctaLink: "https://www.facebook.com",
     content: () => (
       <p>
         Aquí aparecerán las convocatorias más recientes de la Universidad
         Politécnica de Tapachula.
+         Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. Aquí aparecerán las convocatorias más recientes de la Universidad
+        Politécnica de Tapachula. HOAL HOLA HOLA HOLA 
+
       </p>
     ),
   },

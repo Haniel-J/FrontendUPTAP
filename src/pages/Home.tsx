@@ -41,10 +41,13 @@ function Home() {
       <NewsSection />
       
       <AvisosSection />
-      
+
       <OfertaEducativaSection />
 
       <Footer />
+      
+    
+
 
       </main>
     </>

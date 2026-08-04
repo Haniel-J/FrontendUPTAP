@@ -8,7 +8,7 @@ export function ScrollBasedLine() {
         <section className="relative overflow-hidden py-8">
       {/* Imagen decorativa de fondo */}
       <img
-        src="/videos/welcome_img/background1.jpeg"
+      
         alt=""
         className="
           absolute
@@ -21,10 +21,10 @@ export function ScrollBasedLine() {
 
       <ScrollVelocityContainer className="text-2xl font-mono tracking-[-0.02em] md:text-3xl md:leading-10">
         <ScrollVelocityRow baseVelocity={15} direction={1}>
-        INOVACIÓN Y TECNOLOGÍA AL SERVICIO DE LA SOCIEDAD ⭐
+        INOVACIÓN Y TECNOLOGÍA AL SERVICIO DE LA SOCIEDAD ||
         </ScrollVelocityRow>
         <ScrollVelocityRow baseVelocity={15} direction={-1}>
-        INOVACIÓN Y TECNOLOGÍA AL SERVICIO DE LA SOCIEDAD ⭐
+        INOVACIÓN Y TECNOLOGÍA AL SERVICIO DE LA SOCIEDAD ||
         </ScrollVelocityRow>
       </ScrollVelocityContainer>
 
